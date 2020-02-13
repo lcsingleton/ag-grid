@@ -11,6 +11,7 @@ export class Downloader {
             const element = document.createElement("a");
             const url = window.URL.createObjectURL(content);
             element.setAttribute("href", url);
+            element.setAttribute("target", "_blank");
             element.setAttribute("download", fileName);
             element.style.display = "none";
             document.body.appendChild(element);
